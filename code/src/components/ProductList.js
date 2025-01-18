@@ -52,37 +52,37 @@ function productList(){
             <div className="cards_container">
                     <ul className="cards_items">
                         <CardItem
-                         src = "images/shose1.jpg"
+                         src="images/shose1.jpg"
                          product_name = "브랜드A"
                          product_description = "편안하고 착용감이 좋은 신발"
                          product_price = "35,000원"
                         />
                         <CardItem
-                         src = "images/shose2.jpg"
+                         src = "./images/shose2.jpg"
                          product_name = "브랜드B"
                          product_description = "힙한 컬러가 아주아주아주 매력적인 신발"
                          product_price = "25,000원"
                         />
                         <CardItem
-                         src = "images/shose3.jpg"
+                         src = "./images/shose3.jpg"
                          product_name = "브랜드C"
                          product_description = "힙한 컬러가 매력적인 신발"
                          product_price = "36,000원"
                         />
                         <CardItem
-                         src = "images/shose4.jpg"
+                         src = "./images/shose4.jpg"
                          product_name = "브랜드A"
                          product_description = "편안하고 착용감이 좋은 신발"
                          product_price = "35,000원"
                         />
                         <CardItem
-                         src = "images/shose5.jpg"
+                         src = "./images/shose5.jpg"
                          product_name = "브랜드B"
                          product_description = "힙한 컬러가 아주아주아주 매력적인 신발"
                          product_price = "25,000원"
                         />
                         <CardItem
-                         src = "images/shose6.jpg"
+                         src = "./images/shose6.jpg"
                          product_name = "브랜드C"
                          product_description = "힙한 컬러가 매력적인 신발"
                          product_price = "36,000원"
