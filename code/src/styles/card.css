@@ -1,6 +1,9 @@
+
+/* 카드 레이아웃 */
+
 .cards_item{
-  width: 230px;
-  height: auto;
+  width: 400px;
+  height: fit-content;
   border-color:rgb(237, 237, 237);
   background-color: white;
   border-style:solid;
@@ -8,27 +11,26 @@
   border-radius: 20px;
   margin: 20px 5px;
   padding-bottom: 10px;
+  flex: 1 1 40%;
 }
 
 .cards__item__pic-wrap{
-  position: relative;
   width: 100%;
-  height: auto;
+  height: 250px;
+  margin-bottom: 15px;
 }
 
 .cards__item__pic-wrap img{
-  position: relative;
-  top:0;
-  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 18px 18px 0px 0px;
 }
 
 
 .cards_item_info{
   position: relative;
-  width: inherit;
+  width: 100%;
   height: auto;
   color:black;
 }
@@ -36,27 +38,29 @@
 .cards_item_info div{
   padding: 1px 13px;
   margin: 5px;
-}
-
-.cards_product_name{
-  font-size:large;
-}
-
-
-.cards_product_description{
-  font-size: medium;
-  color:rgb(122, 122, 122);
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
 }
 
+.cards_product_name{
+  font-size:larger;
+  font-weight: 600;
+}
+
+.cards_product_description{
+  font-size: medium;
+  color:rgb(122, 122, 122);
+}
+
 .cards_product_price{
   font-size: large;
   height: auto;
+  font-weight: 600;
 }
 
 .cartToggleBtn button {
+  margin-top: 3px;
   display: inline;
   font-size:small;
   padding : 2px 13px;
@@ -65,14 +69,48 @@
   border-radius: 30px;
 }
 
-@media only screen and (min-width: 1024px) {
-  .cards_items {
-    display: flex;
-  }
-}
+/* 미디어 화면 */
 
 @media only screen and (max-width: 1024px) {
-  .cards__item {
-    margin-bottom: 2rem;
+  .cards_item {
+    width: 45%;
+    flex: 1 auto;
+    margin: 10px 5px;
   }
-}
+
+  .cards__item__pic-wrap{
+    width: 100%;
+    height: 150px;
+  }
+
+  .cards_item_info{
+    position: relative;
+    width: 100%;
+    height: auto;
+    color:black;
+  }
+
+  .cards_item_info div{
+    padding: 0px 13px;
+    margin: 3px;
+  }
+
+  .cards_product_name{
+    font-size:bold;
+    font-weight: 500;
+  }
+  
+  .cards_product_description{
+    font-size: medium;
+    color:rgb(122, 122, 122);
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  
+  .cards_product_price{
+    font-size:border;
+    height: auto;
+    font-weight: 500;
+  }
+} 

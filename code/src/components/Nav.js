@@ -9,7 +9,7 @@ function nav(props) {
             <ul>
                 {/* <li class="back_btn" >
                     <a href="">
-                        <IoArrowBackSharp size={50} color="white"
+                        <IoArrowBackSharp size={35} color="white"
                         onMouseOver={({target})=>target.style.color="dimgrey"}
                         onMouseOut={({target})=>target.style.color="white"}
                         />
@@ -17,7 +17,7 @@ function nav(props) {
                 </li> */}
                 <li class="cart_btn" >
                     <a href="">
-                        <AiOutlineShopping size={50} color="white"
+                        <AiOutlineShopping size={35} color="white"
                         onMouseOver={({target})=>target.style.color="dimgrey"}
                         onMouseOut={({target})=>target.style.color="white"}
                         />

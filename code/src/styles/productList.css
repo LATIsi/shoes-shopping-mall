@@ -1,17 +1,62 @@
+/* content 레이아웃 */
+
 .Product_content{
   position: relative;
   margin: auto;
-  padding: 3% 0%;
-  width:75%;
+  padding: 100px 0%;
+  width:85%;
   justify-content: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   align-items: center;
 }
 
+/* 카드목록 레이아웃 */
+
+.cards{
+
+}
+
+.cards_container{
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.cards_items{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+}
+
+/* 기초 설정 */
 
 ul{
     list-style-type: none;
   }
 
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 4px 0 0 6px;
+}
 
+h4{
+  font-weight: normal;
+}
+
+
+/* 미디어 화면 */
+
+@media only screen and (max-width: 1024px) {
+  h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 4px 0 0 6px;
+  }
+  
+  h4{
+    font-weight: normal;
+  }
+  
+} 
 
