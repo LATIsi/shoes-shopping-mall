@@ -9,8 +9,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Nav></Nav>
-        <ProductList/>
       </header>
+      <content className="App-content">
+        <ProductList/>
+      </content>
+      <footer className="App-footer">
+      </footer>
     </div>
   );
 }

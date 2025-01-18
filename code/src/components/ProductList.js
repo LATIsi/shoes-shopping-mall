@@ -45,7 +45,7 @@ function productList(){
     let count = 3;
                         
     return(
-        <div class="pL">
+        <div class="Product_content">
         <div>신발 상품 목록</div>
         <div>현재 {count}개의 상품이 있습니다.</div>
         <div className="cards">
@@ -70,7 +70,25 @@ function productList(){
                          product_name = "브랜드C"
                          product_description = "힙한 컬러가 매력적인 신발"
                          product_price = "36,000원"
-                        />        
+                        />
+                        <CardItem
+                         src = "images/shose1.jpg"
+                         product_name = "브랜드A"
+                         product_description = "편안하고 착용감이 좋은 신발"
+                         product_price = "35,000원"
+                        />
+                        <CardItem
+                         src = "images/shose2.jpg"
+                         product_name = "브랜드B"
+                         product_description = "힙한 컬러가 아주아주아주 매력적인 신발"
+                         product_price = "25,000원"
+                        />
+                        <CardItem
+                         src = "images/shose2.jpg"
+                         product_name = "브랜드C"
+                         product_description = "힙한 컬러가 매력적인 신발"
+                         product_price = "36,000원"
+                        />    
                     </ul>    
                 </div>
             </div>         
