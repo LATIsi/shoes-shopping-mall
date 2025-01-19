@@ -2,8 +2,10 @@ import React from 'react';
 import CardItem from './CardItem';
 import  '../styles/productList.css';
 // import img from '../assets/shose1.jpg';
-// import img2 from '../assets/shose3.jpg';
+// import img2 from '../assets/shose3.jpg'; 테스트용 사진 링크
 
+
+// 제품 정보 담긴 배열
 let product_data = [
                     {
                         id:0,
@@ -80,6 +82,8 @@ let product_data = [
 
                     
 function AddShowList(){
+
+    //제품 정보 배열을 map으로 <CardItem>을 사용해 뿌려줌
     const content = product_data.map(
         function(product){
             return(  <CardItem
@@ -98,6 +102,8 @@ function AddShowList(){
 function productList(){ 
     let show_product_id = null;
     show_product_id = product_data.length;
+
+    
     return(
         <div className="Product_content">
         <h1>신발 상품 목록</h1>

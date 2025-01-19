@@ -9,7 +9,8 @@ function nav(props) {
     return (
         <div id = "Nav">
             <ul>
-                {/* <li className="back_btn" >
+                {/* 뒤로가기 버튼
+                    <li className="back_btn" >
                     <a href="">
                         <IoArrowBackSharp size={35} color="white"
                         onMouseOver={({target})=>target.style.color="dimgrey"}
