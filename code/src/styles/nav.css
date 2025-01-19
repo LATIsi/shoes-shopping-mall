@@ -21,7 +21,24 @@ ul,li{
 }
 
 .cart_btn{
+    position: relative;
     float: right;
+    text-align: center;
+}
+
+.cart_count_circle{
+    top: 50%;
+    left: 50%;
+    font-size: small;
+    font-weight: 700;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    margin: auto;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 1024px) {
