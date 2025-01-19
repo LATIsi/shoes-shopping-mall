@@ -89,7 +89,7 @@ function AddShowList(){
                     product_name = {product.product_name}
                     product_description = {product.product_description}
                     product_price = {product.product_price}
-                    card_state = "담기"
+                    card_state = {true} //true는 담기, false는 담김!
                     />)
         }); 
     return content;

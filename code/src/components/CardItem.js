@@ -2,12 +2,19 @@ import React, { useState } from 'react';
 import  '../styles/card.css';
 
 function CardItem(props) {
-  const [select , setSelect] = useState(props.card_state);
+  let gotItem = props.card_state;
+  let [select , setSelect] = useState(gotItem);
   let content = null;
+
   content = <button
-              className={ select === "담기" ? "show-menu" : "hide-menu"}
+              className={ select ? "show-menu" : "hide-menu" }
+              onClick={ () => {
+                  setSelect((select) =>
+                  select = !select
+              );
+              }}
             >
-            {select}
+            {select ? "담기" : "담김!"}
             </button>
 
     return (
