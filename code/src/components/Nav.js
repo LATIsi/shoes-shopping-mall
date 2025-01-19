@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { createContext, useContext } from 'react';
 import  '../styles/nav.css';
 import { AiOutlineShopping } from "react-icons/ai";
 import { IoArrowBackSharp } from "react-icons/io5";
 
-function nav(props) {
-    let cart_count = 5;
+let cart_array =[];
+let cart_count = createContext(cart_array);
 
+function nav() {
+    const nav_cart = 0;
     return (
         <div id = "Nav">
             <ul>
@@ -20,13 +22,12 @@ function nav(props) {
                 </li> */}
                 <li className="cart_btn" >
                     <div>
-                        {cart_count === 0? (
+                        {nav_cart === 0? (
                             <></>
                         ) : (
-                            <div class="cart_count_circle">{cart_count}</div>
+                            <div className="cart_count_circle">{nav_cart}</div>
                         )}
                     </div>
-                    
                     <a href="">
                         <AiOutlineShopping size={35} color="white"
                         onMouseOver={({target})=>target.style.color="dimgrey"}
