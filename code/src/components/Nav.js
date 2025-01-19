@@ -7,7 +7,7 @@ function nav(props) {
     return (
         <div id = "Nav">
             <ul>
-                {/* <li class="back_btn" >
+                {/* <li className="back_btn" >
                     <a href="">
                         <IoArrowBackSharp size={35} color="white"
                         onMouseOver={({target})=>target.style.color="dimgrey"}
@@ -15,7 +15,7 @@ function nav(props) {
                         />
                     </a>
                 </li> */}
-                <li class="cart_btn" >
+                <li className="cart_btn" >
                     <a href="">
                         <AiOutlineShopping size={35} color="white"
                         onMouseOver={({target})=>target.style.color="dimgrey"}

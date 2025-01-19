@@ -10,9 +10,9 @@ function App() {
       <header className="App-header">
         <Nav></Nav>
       </header>
-      <content className="App-content">
+      <div className="App-content">
         <ProductList/>
-      </content>
+      </div>
       <footer className="App-footer">
       </footer>
     </div>

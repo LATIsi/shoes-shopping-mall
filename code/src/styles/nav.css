@@ -23,3 +23,10 @@ ul,li{
 .cart_btn{
     float: right;
 }
+
+@media only screen and (max-width: 1024px) {
+    #Nav{
+        width:95%;
+        height: 30px;
+    }
+}

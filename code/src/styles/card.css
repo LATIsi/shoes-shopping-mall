@@ -2,7 +2,7 @@
 /* 카드 레이아웃 */
 
 .cards_item{
-  width: 400px;
+  width: 380px;
   height: fit-content;
   border-color:rgb(237, 237, 237);
   background-color: white;
@@ -59,7 +59,7 @@
   font-weight: 600;
 }
 
-.cartToggleBtn button {
+.show-menu {
   margin-top: 3px;
   display: inline;
   font-size:small;
@@ -67,7 +67,21 @@
   background-color: black;
   color:white;
   border-radius: 30px;
+  border:none;
 }
+  
+.hide-menu{
+  margin-top: 3px;
+  display: inline;
+  font-size:small;
+  padding : 2px 13px;
+  background-color: rgb(182, 182, 182);
+  color:rgb(0, 0, 0);
+  border-radius: 30px;
+  border:none;
+}  
+
+
 
 /* 미디어 화면 */
 
@@ -75,12 +89,12 @@
   .cards_item {
     width: 45%;
     flex: 1 auto;
-    margin: 10px 5px;
+    margin: 10px 8px;
   }
 
   .cards__item__pic-wrap{
     width: 100%;
-    height: 150px;
+    height: 130px;
   }
 
   .cards_item_info{
@@ -96,12 +110,12 @@
   }
 
   .cards_product_name{
-    font-size:bold;
+    font-size:medium;
     font-weight: 500;
   }
   
   .cards_product_description{
-    font-size: medium;
+    font-size: small;
     color:rgb(122, 122, 122);
     overflow:hidden;
     text-overflow:ellipsis;
@@ -109,8 +123,31 @@
   }
   
   .cards_product_price{
-    font-size:border;
+    font-size:medium;
     height: auto;
     font-weight: 500;
   }
+
+  .show-menu {
+    margin-top: 3px;
+    display: inline;
+    font-size:x-small;
+    padding : 2px 13px;
+    background-color: black;
+    color:white;
+    border-radius: 30px;
+    border:none;
+  }
+    
+  .hide-menu{
+    margin-top: 3px;
+    display: inline;
+    font-size:x-small;
+    padding : 2px 13px;
+    background-color: rgb(182, 182, 182);
+    color:rgb(0, 0, 0);
+    border-radius: 30px;
+    border:none;
+  }  
+
 } 
