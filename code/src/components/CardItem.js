@@ -4,7 +4,11 @@ import  '../styles/card.css';
 function CardItem(props) {
   const [select , setSelect] = useState(props.card_state);
   let content = null;
-  content = <button className={ select === "담기" ? "show-menu" : "hide-menu"}>{select}</button>
+  content = <button
+              className={ select === "담기" ? "show-menu" : "hide-menu"}
+            >
+            {select}
+            </button>
 
     return (
                 <li className="cards_item">

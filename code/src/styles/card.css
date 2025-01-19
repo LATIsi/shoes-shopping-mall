@@ -88,7 +88,6 @@
 @media only screen and (max-width: 1024px) {
   .cards_item {
     width: 45%;
-    flex: 1 1 auto;
     margin: 10px 8px;
   }
 
